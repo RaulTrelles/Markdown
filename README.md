@@ -38,3 +38,17 @@ Esta sección escribiremos un poco de código esperando que sea de su agrado par
     1. Caso a
     2. Caso b
  3. Tercera opción
+
+
+**Trabajaremos con Link**
+
+Visita mi **[Perfil](www.google.com "Google")**
+
+**Para referenciar mi correo electrónico :**
+<r_trelles@hotmail.com>
+<www.google.com>
+
+**Referencias:**
+Esto es una referencia [1]
+
+[1]: https://www.google.com
