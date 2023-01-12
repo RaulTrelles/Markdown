@@ -46,9 +46,16 @@ Visita mi **[Perfil](www.google.com "Google")**
 
 **Para referenciar mi correo electrónico :**
 <r_trelles@hotmail.com>
-<www.google.com>
 
 **Referencias:**
 Esto es una referencia [1]
 
 [1]: https://www.google.com
+
+**Para Cargar imagenes**
+```
+Se coloca el signo de !
+![Esta es la imagen de internet](Ruta)
+```
+![Imagen a Mostrar](https://concepto.de/wp-content/uploads/2018/02/sistemas-de-informacion-768x399.jpg)
+
