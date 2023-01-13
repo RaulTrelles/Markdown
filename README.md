@@ -91,3 +91,157 @@ Link de Emoticones: [Link de emiticones](https://www.webfx.com/tools/emoji-cheat
 |asasasasssa|asasasasasas|sasasasasas|
 |           |            |           |
 
+**8.- Combinacion de MD y HTML**
+Se ppueden usar etiquetas de html
+
+**9.- Visualizacion de veideos**
+[![veamos el siguiente video]](https://www.youtube.com/watch?v=1BzzckYqT9w&list=PLM4HZoZrNapsQ_f6a9275n15riyr-2AnQ&index=9 imagenalternativa.jpg](https://www.youtube.com/watch?v=1BzzckYqT9w&list=PLM4HZoZrNapsQ_f6a9275n15riyr-2AnQ&index=9)
+
+**10.-Funciones para textos**
+
+<ins>Texto subrrallado</ins>
+
+<center>Texto al centro</center>
+
+<p style="color:red"> Texto de color </p>
+<p style="color:green"> Texto de color </p>
+
+**<ins>10.1.- links</ins>**
+
+_misma ventana_
+
+[TESTO PARA EL lINK](https://www.google.com)
+
+_otra ventana_
+
+<a href="https://www.google.com" target="_blank"> TEXTO PARA LINK EN OTRA PAGUINA </a>
+
+
+**11.- Manejar diagramas de flujo**
+
+
+```mermaid
+graph
+A[Square React] -- link text --> B((circle))
+A --> C(Round React)
+B --> D(Rhombus)
+```
+##
+
+```mermaid
+graph LR
+A[Square React] -- link text --> B((circle))
+A --> C(Round React)
+B --> D(Rhombus)
+```
+##
+```mermaid
+flowchart TB
+A((Inicio))
+B[/Escribe la contraseña/]
+C[\PASS\]
+D{pass =1234}
+E[/ Felicidades login correcto /]
+F[/ Loggin correcto /]
+G((Fin))
+
+A --> B --> C --> D
+
+D --> | VERDADERO| E
+
+D --> |FALSO| F
+
+F --> B
+
+E --> G
+```
+##
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+##
+Tags:
+Markdown
+
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+##
+
+```mermaid
+sequenceDiagram
+    participant user
+    participant [example](example.com)
+    participant iframe
+    participant ![viewscreen](./.tiny-icon.png)
+    user->>dotcom: Go to the [example](example.com) page
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+##
+```mermaid
+flowchart LR;
+    A-->B;
+    B-->C;
+    C-->D;
+    click A callback "Tooltip for a callback"
+    click B "http://www.github.com" "This is a tooltip for a link"
+    click A call callback() "Tooltip for a callback"
+    click B href "http://www.github.com" "This is a tooltip for a link"
+```
+##
+
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant John
+    links Alice: {"Dashboard": "https://dashboard.contoso.com/alice", "Wiki": "https://wiki.contoso.com/alice"}
+    links John: {"Dashboard": "https://dashboard.contoso.com/john", "Wiki": "https://wiki.contoso.com/john"}
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+```
+##
+```mermaid
+  flowchart LR;
+      A[CI MULTI CHAPTCHA]-->B{Select captcha service by developer?};
+      classDef green color:#022e1f,fill:#00f500;
+      classDef red color:#022e1f,fill:#f11111;
+      classDef white color:#022e1f,fill:#fff;
+      classDef black color:#fff,fill:#000;
+      B--YES-->C[How to use?]:::green;
+      
+      C-->U[I choose recaptcha.]:::green;
+      U--Views-->Q["echo CIMC_JS('recaptcha');\n echo CIMC_HTML(['captcha_name'=>'recaptcha']);"]:::green;
+      U--Controller-->W["CIMC_RULE('recaptcha');"]:::green;
+      
+      C-->I[I choose arcaptcha.]:::white;
+      I--Views-->O["echo CIMC_JS('arcaptcha');\n echo CIMC_HTML(['captcha_name'=>'arcaptcha']);"]:::white;
+      I--Controller-->P["CIMC_RULE('arcaptcha');"]:::white;
+      
+      C-->X[I choose bibot.]:::red;
+      X--Views-->V["echo CIMC_JS('bibot');\n echo CIMC_HTML(['captcha_name'=>'bibot']);"]:::red;
+      X--Controller-->N["CIMC_RULE('bibot');"]:::red;
+      
+      B--NO-->D[How to use?]:::black;
+      D---Views:::black-->F["echo CIMC_JS('randomcaptcha');\n echo CIMC_HTML(['captcha_name'=>'randomcaptcha']);"]:::black; 
+      D---Controller:::black-->T["CIMC_RULE('archaptcha,recaptcha,bibot');"]:::black;
+```
