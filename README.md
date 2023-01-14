@@ -225,3 +225,122 @@ sequenceDiagram
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
 ```
+**13.- Graficas circulares**
+
+```mermaid
+pie showData
+    title Lenguajes más Usados en el proyecto
+            "React":50
+            "html":20
+            "c++":20
+            "vfox":10
+
+```
+
+*14.- Diagramas entidad relación*
+```mermaid
+erDiagram
+
+producto {
+    string id_producto
+    string nombre
+    double precio
+}
+usuarios {
+     string id_user
+     string nombre
+     string direccion       
+}
+pedido {
+    string id_pedido
+    string id_user
+    string id_producto
+}
+
+usuarios ||--o{ pedido : compra
+producto }|--o{ pedido : venta
+
+```
+*15.- Como crear diagramas journey*
+
+```mermaid
+journey 
+    title Compra
+    section seleccion de productos
+        Navegar: 6  :usuario
+        Agregar al carrito: 6: usuario
+    section Pago
+        Realizar Pago:  3: usuario
+        Validar Pago:   5: sistema       
+
+```
+##
+
+*6.- Como crear un diagrama git*
+```mermaid
+gitGraph
+    commit
+    branch dev
+    commit
+    commit
+    checkout main
+    commit
+    merge dev
+    commit id: "v.1.0.0" tag:   "release"
+    checkout dev
+    commit
+    branch bug
+    commit id:  "error 484"
+    checkout dev
+    commit
+    checkout bug
+    merge dev
+    checkout main
+    commit
+    commit
+    merge dev
+    commit id:  "v.2.0.0" tag:  "Release"
+
+```
+====
+
+*17.- Diagramas de Gantt*
+```mermaid
+gantt
+    dateformat  YYYY-MM-DD
+    excludes weekends
+    title   proyect tienda online
+
+    section Diseño
+        Diseño BD.  :   crit,   DB, 2022-07-20,   7d
+        Diseño Frontend : F, 2022-07-20,    7d
+
+    section Desarrollo
+        Conexion DB :   active,   CDB,    after   DB, id
+        Desarrollo Front    :   DF, after F, 4d
+
+```
+===
+
+*17.- Diagramas de Gantt*
+```mermaid
+requirementDiagram
+
+performanceRequirement TiempoDeCarga{
+    id : 1
+    Text : "Tiempo de carga menor a 2 seg"
+    Risk : Low
+    veriFymethod: Test
+}
+
+element Carga{
+    type: user_experience
+    docRef : gitHub/Test
+}
+
+Carga = satisfies --> TiempoDeCarga
+
+```
+# Personalizando perfil
+
+crear un repositorio con nuestro nombre y editar el repositorio.
