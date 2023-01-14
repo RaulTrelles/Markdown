@@ -174,7 +174,7 @@ flowchart LR;
     click A call callback() "Tooltip for a callback"
     click B href "http://www.github.com" "This is a tooltip for a link"
 ```
-# 12.- Diagrama de secuencia 
+**12.- Diagrama de secuencia**
 
 ```mermaid
 sequenceDiagram
