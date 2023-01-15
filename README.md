@@ -1,9 +1,13 @@
 # Estudios Sobre Markdown
+*Comparto un resumen de la Potencia de MarkDown*
+
+*Como escribir comentarios en una sección usando ```*
 
 ```
 Representaremos aquellos comandos para poder 
 representar los beneficios de trabajar con Markdown
 ```
+
 ## Título, \# usandolo
 ## Sub título, \## usandolo
 ### sub título, \### usandolo
