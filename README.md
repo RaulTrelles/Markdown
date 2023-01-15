@@ -326,25 +326,6 @@ gantt
 ```
 ===
 
-*17.- Diagramas de Gantt*
-```mermaid
-requirementDiagram
-
-performanceRequirement TiempoDeCarga{
-    id : 1
-    Text : "Tiempo de carga menor a 2 seg"
-    Risk : Low
-    veriFymethod: Test
-}
-
-element Carga{
-    type: user_experience
-    docRef : gitHub/Test
-}
-
-Carga = satisfies --> TiempoDeCarga
-
-```
 # Personalizando perfil
 
 crear un repositorio con nuestro nombre y editar el repositorio.
