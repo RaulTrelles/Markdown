@@ -1,7 +1,10 @@
 # Estudios Sobre Markdown
+```
+Markdown es un lenguaje de marcado ligero para crear texto formateado utilizando un editor de texto sin formato. John Gruber 
+y Aaron Swartz crearon Markdown en 2004 como un lenguaje de marcado que atrae a los lectores humanos en su forma de código 
+fuente
+```
 *Comparto un resumen de la Potencia de MarkDown*
-
-*Como escribir comentarios en una sección usando ```*
 
 ```
 Representaremos aquellos comandos para poder 
